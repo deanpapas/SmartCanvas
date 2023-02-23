@@ -1,0 +1,18 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "javafx-sdk-18.0.1/lib/javafx.base.jar",
+        "javafx-sdk-18.0.1/lib/javafx.controls.jar",
+        "javafx-sdk-18.0.1/lib/javafx.fxml.jar",
+        "javafx-sdk-18.0.1/lib/javafx.graphics.jar",
+        "javafx-sdk-18.0.1/lib/javafx.media.jar",
+        "javafx-sdk-18.0.1/lib/javafx.swing.jar",
+        "javafx-sdk-18.0.1/lib/javafx.web.jar",
+        "javafx-sdk-18.0.1/lib/javafx-swt.jar",
+        "sqlite/sqlite-jdbc-3.36.0.3.jar"
+    ],
+    "java.project.sourcePaths": [
+        "src/main/resources/view",
+        "src/main/java",
+    ]
+}

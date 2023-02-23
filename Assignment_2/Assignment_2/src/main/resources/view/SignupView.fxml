@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" spacing="10.0" style="-fx-background-color: #383838;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SignupController">
+   <children>
+      <Label fx:id="imagepath" prefHeight="18.0" prefWidth="19.0" textFill="#1c1c1c" visible="false" />
+      <ImageView fx:id="profilepic" fitHeight="204.0" fitWidth="219.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/defaultProfilePhoto.jpeg" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER" prefHeight="14.0" prefWidth="400.0" spacing="20.0" />
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" />
+      <HBox alignment="CENTER" spacing="20.0">
+         <children>
+            <Label text="Username* " textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="username" promptText="Username" style="-fx-background-color: #ffffff;" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" />
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <HBox alignment="CENTER" spacing="20.0">
+               <children>
+                  <Label text="First Name " textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="firstname" promptText="First Name" style="-fx-background-color: #ffffff;" />
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" />
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <HBox alignment="CENTER" spacing="20.0">
+               <children>
+                  <Label text="Last Name " textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="lastname" promptText="Last Name" style="-fx-background-color: #ffffff;" />
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" />
+      <HBox alignment="CENTER" prefHeight="14.0" prefWidth="400.0" spacing="20.0">
+         <children>
+            <Label text="Password* " textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="password" promptText="Password" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" />
+      <HBox alignment="CENTER" prefHeight="40.0" prefWidth="200.0" spacing="20.0">
+         <children>
+            <Button fx:id="createUser" mnemonicParsing="false" style="-fx-background-color: #2e89ff;" text="Create user" textFill="WHITE" />
+            <Button fx:id="close" mnemonicParsing="false" style="-fx-background-color: #2e89ff;" text="Close" textFill="WHITE" />
+         </children>
+      </HBox>
+      <Label fx:id="status" alignment="CENTER" contentDisplay="CENTER" prefHeight="18.0" prefWidth="376.0" textAlignment="CENTER">
+         <padding>
+            <Insets bottom="10.0" />
+         </padding>
+      </Label>
+   </children>
+</VBox>

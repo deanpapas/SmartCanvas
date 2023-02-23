@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1150.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CanvasController">
+   <children>
+      <VBox prefHeight="700.0" prefWidth="1150.0">
+         <children>
+            <HBox alignment="CENTER_RIGHT" prefHeight="10.0" prefWidth="1150.0" style="-fx-background-color: #727272;">
+               <children>
+                  <MenuBar prefHeight="0.0" prefWidth="840.0" style="-fx-background-color: #727272;">
+                    <menus>
+                      <Menu mnemonicParsing="false" text="File">
+                        <items>
+                          <MenuItem fx:id="newcanvas" mnemonicParsing="false" text="New Canvas" />
+                              <MenuItem fx:id="clearcanvas" mnemonicParsing="false" text="Clear Canvas" />
+                              <MenuItem fx:id="deletecanvas" mnemonicParsing="false" text="Delete Canvas" />
+                              <MenuItem fx:id="saveas" mnemonicParsing="false" text="Save As" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Edit">
+                        <items>
+                          <MenuItem fx:id="deleteelement" mnemonicParsing="false" text="Delete Element" />
+                        </items>
+                      </Menu>
+                      <Menu mnemonicParsing="false" text="Help">
+                        <items>
+                          <MenuItem fx:id="about" mnemonicParsing="false" text="About" />
+                        </items>
+                      </Menu>
+                    </menus>
+                  </MenuBar>
+                  <HBox alignment="CENTER_RIGHT" maxWidth="335.0" minWidth="270.0" prefHeight="50.0" prefWidth="305.0" style="-fx-border-color: #727272;">
+                     <children>
+                        <ImageView fx:id="profilepic" fitHeight="40.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@images/defaultProfilePhoto.jpeg" />
+                           </image>
+                           <HBox.margin>
+                              <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <Label fx:id="fullname" maxHeight="17.0" maxWidth="219.0" minHeight="17.0" minWidth="0.0" prefHeight="17.0" prefWidth="122.0" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Button fx:id="profile" maxHeight="30.0" maxWidth="60.0" minHeight="30.0" minWidth="60.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: #2e89ff;" text="Profile" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="logout" maxHeight="30.0" maxWidth="60.0" minHeight="30.0" minWidth="60.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: #2e89ff;" text="Logout" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets bottom="4.0" left="4.0" right="8.0" top="4.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="647.0" prefWidth="1144.0">
+               <children>
+                  <VBox alignment="TOP_CENTER" fillWidth="false" maxHeight="615.0" maxWidth="90.0" minHeight="615.0" minWidth="90.0" prefHeight="615.0" prefWidth="90.0" scaleShape="false" style="-fx-background-color: #383838;">
+                     <children>
+                        <Button fx:id="text" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" prefHeight="60.0" prefWidth="80.0" style="-fx-background-color: #b6b6b6;" text="Text" textAlignment="CENTER">
+                           <graphic>
+                              <ImageView fitHeight="46.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/text.png" />
+                                 </image></ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="image" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" prefHeight="60.0" prefWidth="80.0" style="-fx-background-color: #b6b6b6;" text="Image" textAlignment="CENTER">
+                           <graphic>
+                              <ImageView fitHeight="46.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/image.png" />
+                                 </image></ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="rectangle" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" prefHeight="60.0" prefWidth="80.0" style="-fx-background-color: #b6b6b6;" text="Rectangle" textAlignment="CENTER">
+                           <graphic>
+                              <ImageView fitHeight="46.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/rectangle.png" />
+                                 </image></ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="circle" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" prefHeight="60.0" prefWidth="80.0" style="-fx-background-color: #b6b6b6;" text="Circle" textAlignment="CENTER">
+                           <graphic>
+                              <ImageView fitHeight="46.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/circle.png" />
+                                 </image></ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="canvas" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" prefHeight="60.0" prefWidth="80.0" style="-fx-background-color: #b6b6b6;" text="Canvas" textAlignment="CENTER">
+                           <graphic>
+                              <ImageView fitHeight="46.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/canvas.png" />
+                                 </image></ImageView>
+                           </graphic>
+                           <VBox.margin>
+                              <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                           </VBox.margin>
+                        </Button>
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER" prefHeight="615.0" prefWidth="775.0">
+                     <children>
+                        <FlowPane alignment="CENTER" cacheShape="false" centerShape="false" columnHalignment="CENTER" prefHeight="615.0" prefWidth="784.0" prefWrapLength="0.0" scaleShape="false" style="-fx-background-color: #4A4A4A;">
+                           <children>
+                              <Pane fx:id="currentcanvas" maxHeight="644.0" maxWidth="731.0" minHeight="10.0" minWidth="10.0" prefHeight="229.0" prefWidth="342.0" style="-fx-background-color: #ffffff;" visible="false" />
+                           </children>
+                        </FlowPane>
+                     </children>
+                  </HBox>
+                  <VBox maxHeight="615.0" maxWidth="306.0" minHeight="615.0" minWidth="300.0" prefHeight="615.0" prefWidth="306.0" style="-fx-background-color: #383838;">
+                     <children>
+                        <VBox prefHeight="616.0" prefWidth="344.0" style="-fx-background-color: #383838;">
+                           <children>
+                              <Pane fx:id="optionpane" prefHeight="616.0" prefWidth="335.0" />
+                           </children>
+                        </VBox>
+                     </children></VBox>
+               </children>
+            </HBox>
+            <HBox fx:id="detailbox" prefHeight="130.0" prefWidth="1150.0" style="-fx-background-color: #383838; -fx-border-color: #727272;">
+               <children>
+                  <VBox alignment="CENTER_LEFT" prefHeight="33.0" prefWidth="876.0">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label alignment="CENTER" prefHeight="143.0" prefWidth="30.0" text="x:" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin></Label>
+                              <Label alignment="CENTER" prefHeight="143.0" prefWidth="35.0" text="0" textFill="WHITE" fx:id="xvalue">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin></Label>
+                              <Label alignment="CENTER" prefHeight="143.0" prefWidth="30.0" text="y:" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin></Label>
+                              <Label fx:id="yvalue" alignment="CENTER" prefHeight="143.0" prefWidth="35.0" text="0" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin></Label>
+                              <Label alignment="CENTER" prefHeight="143.0" prefWidth="30.0" text="w:" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin></Label>
+                              <Label fx:id="widthvalue" alignment="CENTER" prefHeight="143.0" prefWidth="35.0" text="0" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin></Label>
+                              <Label alignment="CENTER" prefHeight="143.0" prefWidth="30.0" text="h:" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin></Label>
+                              <Label fx:id="heightvalue" alignment="CENTER" prefHeight="143.0" prefWidth="35.0" text="0" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin></Label>
+                              <Label alignment="CENTER" prefHeight="143.0" prefWidth="40.0" text="angle:" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin></Label>
+                              <Label fx:id="anglevalue" alignment="CENTER" prefHeight="143.0" prefWidth="35.0" text="0" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin></Label>
+                           </children>
+                        </HBox>
+                     </children></VBox>
+                  <VBox alignment="CENTER" prefHeight="17.0" prefWidth="255.0">
+                     <children>
+                        <Slider fx:id="zoom" blockIncrement="5.0" min="10.0" prefHeight="14.0" prefWidth="121.0">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin></Slider>
+                     </children>
+                  </VBox>
+                  <VBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="69.0">
+                     <children>
+                        <Label fx:id="zoomlabel" alignment="CENTER" prefHeight="17.0" prefWidth="61.0" textFill="WHITE">
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin></Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

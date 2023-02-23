@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EditProfileController">
+   <children>
+      <VBox maxHeight="40.0" minHeight="40.0" prefHeight="40.0" prefWidth="600.0">
+         <children>
+            <HBox prefHeight="40.0" prefWidth="279.0" style="-fx-background-color: #383838;">
+               <children>
+                  <HBox maxWidth="284.0" minWidth="284.0" prefHeight="40.0" prefWidth="284.0" style="-fx-background-color: #585858;" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox prefHeight="370.0" prefWidth="600.0">
+         <children>
+            <HBox prefHeight="373.0" prefWidth="600.0">
+               <children>
+                  <HBox alignment="TOP_CENTER" maxWidth="284.0" minWidth="284.0" prefHeight="364.0" prefWidth="284.0" style="-fx-background-color: #585858;">
+                     <children>
+                        <VBox alignment="TOP_CENTER" prefHeight="360.0" prefWidth="302.0">
+                           <children>
+                              <ImageView fx:id="profilepic" fitHeight="204.0" fitWidth="219.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@images/defaultProfilePhoto.jpeg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <VBox prefHeight="364.0" prefWidth="332.0" style="-fx-background-color: #383838;">
+                     <children>
+                        <HBox prefHeight="14.0" prefWidth="306.0">
+                           <children>
+                              <Label text="Username: " textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="username" alignment="CENTER" contentDisplay="CENTER" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="24.0" prefWidth="306.0">
+                           <children>
+                              <Label text="First Name: " textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="currentfirstname" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets left="10.0" top="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="24.0" prefWidth="306.0">
+                           <children>
+                              <Label text="Last Name: " textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="currentlastname" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets left="10.0" top="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox prefHeight="24.0" prefWidth="306.0">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets left="10.0" top="40.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="24.0" prefWidth="306.0">
+                           <children>
+                              <Label prefHeight="20.0" prefWidth="76.0" text="First Name: " textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="firstname" prefHeight="25.0" prefWidth="145.0" promptText="First Name" style="-fx-background-color: #ffffff;">
+                                 <HBox.margin>
+                                    <Insets left="10.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Button fx:id="changefirstname" mnemonicParsing="false" prefWidth="60.0" style="-fx-background-color: #2e89ff;" text="Change" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets left="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="9.0" prefWidth="306.0">
+                           <children>
+                              <Label prefHeight="20.0" prefWidth="76.0" text="Last Name: " textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="lastname" prefHeight="25.0" prefWidth="145.0" promptText="Last Name" style="-fx-background-color: #ffffff;">
+                                 <HBox.margin>
+                                    <Insets left="9.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Button fx:id="changelastname" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" style="-fx-background-color: #2e89ff;" text="Change" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <VBox.margin>
+                              <Insets left="10.0" top="20.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="26.0" prefWidth="316.0">
+                           <children>
+                              <Label fx:id="message" alignment="CENTER" contentDisplay="CENTER" prefHeight="27.0" prefWidth="351.0" textAlignment="CENTER">
+                                 <padding>
+                                    <Insets bottom="10.0" />
+                                 </padding>
+                              </Label>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="0.0" prefWidth="316.0">
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                           <children>
+                              <Button fx:id="close" mnemonicParsing="false" prefHeight="25.0" prefWidth="60.0" style="-fx-background-color: #2e89ff;" text="Close" textFill="WHITE" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</VBox>
